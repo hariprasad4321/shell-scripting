@@ -18,9 +18,11 @@ fi
 else
 echo "print mysql is already installed"
 fi
-dnf install git -y 
 dnf list installed git
 if [ $? -ne 0 ]
+then
+dnf install git -y
+if [$? -ne 0]
 then
 echo "git installing....failure"
 exit 1
