@@ -1,6 +1,6 @@
 echo "All varaiables passed: $@"
 echo "number of varaiables: $#"
-echo "present script name: @0"
+echo "present script name: $0"
 echo "present working directory: $PWD"
 echo "which user is running script: $USER"
 echo "process id of current script: $$"
