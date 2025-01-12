@@ -5,7 +5,7 @@ then
     exit 1
 fi
 dnf list installed mysql
-if [ $? -ne 0]
+if [ $? -ne 0 ]
 then
 dnf install mysql -y 
 if [ $? -ne 0 ]
@@ -25,8 +25,8 @@ then
 echo "git installing....failure"
 exit 1
 else
-echo "git installing....success"
+    echo "git installing....success"
 fi
 else
-echo "print git alraedy installed"
+    echo "print git alraedy installed"
 fi
