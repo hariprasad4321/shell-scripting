@@ -15,7 +15,7 @@ else
     echo -e "$2....$G success"
 fi
 }
-echo "script started and excuted at:: $TIMESTAMP" &>>$LOG_FILE_NAME
+echo "script started and excuted at: $TIMESTAMP" &>>$LOG_FILE_NAME
 
 if [ $USERID -ne 0 ]
 then 
