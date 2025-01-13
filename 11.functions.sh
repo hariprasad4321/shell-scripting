@@ -6,8 +6,9 @@ then
    exit 1
 else
     echo "$2....success"
-}
 fi
+}
+
 if [ $USERID -ne 0 ]
 then 
     echo "ERROR:: throw the error you wont access root permission"
