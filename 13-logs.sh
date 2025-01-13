@@ -18,17 +18,17 @@ else
 fi
 }
 
-echo "script started and excuted at: $TIMESTAMP" &>>$LOG_FILE_NAME
+echo "script started and excuted at: $TIMESTAMP" 
 
 if [ $USERID -ne 0 ]
 then 
     echo "ERROR:: throw the error you wont access root permission"
     exit 1
 fi
-dnf list installed mysql &>>$LOG_FILE_NAME
+dnf list installed mysql 
 if [ $? -ne 0 ]
 then
-dnf install mysql -y &>>$LOG_FILE_NAME
+dnf install mysql -y 
 VALIDATE $? "Installing Mysql"
 else
     echo -e "print mysql is already.... $Y installed"
