@@ -37,7 +37,7 @@ fi
 dnf list installed git &>>$LOG_FILE_NAME
 if [ $? -ne 0 ]
 then
-    dnf install git -y &>>LOG_FILE_NAME
+    dnf install git -y &>>$LOG_FILE_NAME
 VALIDATE $? "Installing git" 
 else  
     echo -e "print mysql is already.....$Y installed" 
