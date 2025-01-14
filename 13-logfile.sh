@@ -19,7 +19,7 @@ fi
 
 echo "script started at and excuted at: $TIMESTAMP"
 
-if [ USERID -ne 0 ]
+if [ $USERID -ne 0 ]
 then  
     echo "Error:throw the error message user does not have root access"
     exit 1
