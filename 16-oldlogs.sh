@@ -28,5 +28,5 @@ fi
 }
 
 FILES_TO_DELETE=$(find . -name "*.log" -mtime +14)
-echo -e "files to deleted is : $FILES_TO_DELETE"
+echo "files to deleted is : $FILES_TO_DELETE"
 
