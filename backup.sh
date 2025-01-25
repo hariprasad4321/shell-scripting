@@ -30,6 +30,14 @@ if [ $# -lt 2 ]
 then
     USAGE   
 fi
-
-
+if [ !-d $SOURCE_DIR ]
+then
+    echo -e "$SOURCE_DIR does not exist ..... please check"
+    exit 1
+fi    
+if [ ! -d $DEST_DIR ]
+then 
+    echo -e "$DEST_DIR does not exist ......please check"
+    exit 1
+if
 echo "script started at and excuted at: $TIMESTAMP"
