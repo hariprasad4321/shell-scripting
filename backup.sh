@@ -35,6 +35,8 @@ then
     echo -e "$SOURCE_DIR does not exist ..... please check"
     exit 1
 fi    
+
+
 if [ ! -d $DEST_DIR ]
 then 
     echo -e "$DEST_DIR does not exist ......please check"
