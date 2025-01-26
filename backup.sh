@@ -42,5 +42,5 @@ fi
 
 echo "Script started and executed at: $TIMESTAMP"
 
-FILES=$(find $SOURCE_DIR -name "*.log" +mtime $DAYS)
+FILES=$(find $SOURCE_DIR -name "*.log" -mtime +$DAYS)
 echo "files are :: $FILES"
